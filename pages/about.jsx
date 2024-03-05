@@ -1,6 +1,6 @@
 import { pdfjs, Document, Page, PDFDownloadLink } from "react-pdf";
 pdfjs.GlobalWorkerOptions.workerSrc = `//cdnjs.cloudflare.com/ajax/libs/pdf.js/${pdfjs.version}/pdf.worker.min.js`;
-const myResume = "./Resume_Alejandro.pdf";
+const myResume = "./Alejandro-Resume.pdf";
 
 const AboutPage = () => {
 	return (
@@ -43,7 +43,8 @@ const AboutPage = () => {
 					<span role="img" aria-label="laptop">
 						💻
 					</span>{" "}
-					Also becoming myself into a world-class SRE{" "}
+					Also becoming myself into a world-class Data Science and Cyber
+					security master{" "}
 				</li>
 			</ul>
 			<br />
@@ -58,6 +59,9 @@ const AboutPage = () => {
 				<br />
 				<Document file={myResume}>
 					<Page pageIndex={0} />
+				</Document>
+				<Document file={myResume}>
+					<Page pageIndex={1} />
 				</Document>
 			</center>
 		</>
